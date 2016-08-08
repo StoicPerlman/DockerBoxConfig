@@ -17,8 +17,8 @@ services:
         aliases:
          - nginx
     volumes:
-      - ~/nginx.conf:/etc/nginx/nginx.conf
-      - ~/gigmapr-nginx.conf:/etc/nginx/sites-enabled/gigmapr-nginx.conf
+      - ~/docker/nginx.conf:/etc/nginx/nginx.conf
+      - ~/docker/gigmapr-nginx.conf:/etc/nginx/sites-enabled/gigmapr-nginx.conf
     ports:
       - "80:80"
       - "443:443"
