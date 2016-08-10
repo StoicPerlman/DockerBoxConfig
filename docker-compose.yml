@@ -3,7 +3,7 @@ version: '2'
 services:
   gigmapr:
     image: gigmapr
-    name: gigmapr
+    container_name: gigmapr
     restart: always
     networks:
       proxy:
@@ -14,7 +14,7 @@ services:
 
   nginx:
     image: nginx:stable
-    name: nginx
+    container_name: nginx
     restart: always
     networks:
       proxy:
@@ -31,7 +31,7 @@ services:
 
   registry:
     image: registry:2
-    name: registry
+    container_name: registry
     restart: always
     ports:
       - "5000:5000"
