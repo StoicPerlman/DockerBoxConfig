@@ -3,6 +3,7 @@ version: '2'
 services:
   gigmapr:
     image: gigmapr
+    restart: always
     networks:
       proxy:
         aliases:
@@ -12,6 +13,7 @@ services:
 
   nginx:
     image: nginx:stable
+    restart: always
     networks:
       proxy:
         aliases:
@@ -27,4 +29,3 @@ services:
 
 networks:
   proxy:
-
