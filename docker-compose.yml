@@ -29,14 +29,5 @@ services:
     depends_on:
       - gigmapr
 
-  registry:
-    image: registry:2
-    container_name: registry
-    restart: always
-    volumes:
-      - ~/docker/registry:/var/lib/registry
-    ports:
-      - "5000:5000"
-
 networks:
   proxy:
